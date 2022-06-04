@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-04T18:31:48 IST" name="Suite" finished-at="2022-06-04T18:32:23 IST" duration-ms="35390">
+    <groups>
+    </groups>
+    <test started-at="2022-06-04T18:31:48 IST" name="Test" finished-at="2022-06-04T18:32:23 IST" duration-ms="35390">
+      <class name="test_CaseFiles.Testcase_for_Adding_Products">
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:test_CaseFiles.Testcase_for_Adding_Products@59309333]" started-at="2022-06-04T18:31:48 IST" name="browser" finished-at="2022-06-04T18:31:59 IST" duration-ms="11777" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method signature="addingproducts()[pri:0, instance:test_CaseFiles.Testcase_for_Adding_Products@59309333]" started-at="2022-06-04T18:31:59 IST" name="addingproducts" finished-at="2022-06-04T18:32:23 IST" duration-ms="23322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingproducts -->
+      </class> <!-- test_CaseFiles.Testcase_for_Adding_Products -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+ 
+  <parameter name="browser" value="chrome"/>
+	 <classes>
+	<!--  <class name="test_CaseFiles.LoginWith_Valid_Data"/>-->
+      <!-- <class name="test_CaseFiles.LoginWith_Valid_And_INValid_Data"/>  -->
+      <class name="test_CaseFiles.Testcase_for_Adding_Products"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
