@@ -1,6 +1,5 @@
 package test_CaseFiles;
 
-import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.annotations.Test;
 
 import page_objectFiles.Adding_Products;
@@ -45,6 +44,10 @@ public void addingproducts() throws InterruptedException
 		 // String generatedString = RandomStringUtils.randomAlphanumeric(500);
 		  adp.FullDesc();
 		  adp.SkuId(randomeNum());
+		  
+		  Thread.sleep(1000);
+		  adp.selectcategorie("Apparel");
+		  adp.manufactures("HP");
 		  
 	  }
 }

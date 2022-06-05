@@ -1,10 +1,13 @@
 package page_objectFiles;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 
 public class Adding_Products {
 
@@ -36,6 +39,12 @@ public class Adding_Products {
 	@FindBy(xpath="//input[@id='Sku']")
 	WebElement SKU_ID;
 	
+	@FindBy(xpath="//input[@class='k-input k-readonly'][1]")
+	WebElement categories;
+	
+	@FindBy(xpath="//*[@id=\"product-info\"]/div[2]/div[3]/div[2]/div/div/input")
+	WebElement Manufatures;
+
 	
 	
 	public void catalog_name()
@@ -74,25 +83,48 @@ public class Adding_Products {
 		
 	}
 	
+	public void selectcategorie(String cname)
+	{
+		
+		categories.sendKeys(cname);
+		
+		
+		List <WebElement> list=ldriver.findElements(By.xpath("//ul[@id='SelectedCategoryIds_listbox']//li"));	
+		
+		for(int i=0;i<list.size();i++)
+		{
+			String allnames=list.get(i).getText();
+			
+			if(allnames.contains(cname))
+			{
+				list.get(i).click();
+				break;
+			}
+		}
+		
+	}
+	
+	public void manufactures(String Mname)
+	{
+		Manufatures.sendKeys(Mname);
+		List <WebElement> list=ldriver.findElements(By.xpath("//ul[@id='SelectedManufacturerIds_listbox']//li"));	
+		
+		for(int i=0;i<list.size();i++)
+		{
+			String allnames=list.get(i).getText();
+			
+			if(allnames.contains(Mname))
+			{
+				list.get(i).click();
+				break;
+			}
+		}
+		
+	}
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 }
+	
